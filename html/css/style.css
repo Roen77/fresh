@@ -9,7 +9,7 @@ a{color:#fff;}
 .btn{display: inline-block; line-height:38px; height: 38px;; border: 1px solid #dddddd; padding:0 31px 0 35px; font-size: 15px; text-align: center; border-radius: 38px;}
 
 /* ####################### HEADER ######################### */
-header{border-bottom: 1px solid rgba(255, 255, 255, 0.411); position: fixed; left:0; top:0; width: 100%; height: 70px;}
+header{border-bottom: 1px solid rgba(255, 255, 255, 0.411); position: fixed; left:0; top:0; width: 100%; height: 70px; z-index: 100;}
 header>.inner{position: relative; display: flex; justify-content: space-between;}
 header a{display: block;}
 header .left_menu{display: flex; align-items: center;}
@@ -29,7 +29,16 @@ header nav .gnb li:first-child::before{display: none;}
 header nav .gnb li a{width: 160px; text-align: center; font-size: 15px; line-height: 70px; height: 70px;}
 header .faq{margin-top: 15px;}
 header .faq>span>img{vertical-align: -2px; margin-right: 6px;}
-.banner{width: 100%; height: 100vh; background-color: lightcoral;}
+
+/* ####################### BANNER ######################### */
+.banner{width: 100%; height: 100vh;}
+.banner ul{position: relative; height: 100vh; overflow: hidden;}
+.banner ul.banner_area>li{position: absolute; left:0; top:0; width: 100%; height: 100vh; opacity: 0;
+    transition: all 2s;}
+.banner ul.banner_area>li.active{opacity: 1; z-index: 2;}
+.banner ul.banner_area>li .bg video{object-fit: cover; width: 100%; height: 100vh;}
+.banner .inner .btns{position: fixed; z-index: 100; bottom:100px; left:0; width: 100%; height: 50px;}
+.banner .inner .btns li{ display: inline-block; width: 100px; height: 100px; background-color:red; font-size: 10px; font-weight: bold; opacity: 1;}
 
 
 

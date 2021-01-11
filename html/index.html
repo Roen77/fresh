@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CJ프레시웨이연습</title>
+    <!-- Custom css & Custom.js -->
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/vender/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -33,7 +36,39 @@
             </div>
         </header>
         <!-- heaaer -->
-        <section class="banner"></section>
+        <section class="banner">
+            <h2 class="hide">배너영역</h2>
+            <ul class="banner_area">
+                <li class="active">
+                    <div class="bg">
+                        <video autoplay muted poster="images/rolling-a_poster.jpg">
+                            <source src="video/roll-a.mp4">
+                        </video>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <video preload muted  poster="images/rolling-b_poster.jpg">
+                            <source src="video/roll-b.mp4">
+                        </video>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <video preload muted  poster="images/rolling-c_poster.jpg">
+                            <source src="video/roll-c.mp4">
+                        </video>
+                    </div>
+                </li>
+            </ul>
+            <div class="inner">
+                <ul class="btns">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+        </section>
     </div>
 </body>
 </html>
