@@ -1,0 +1,44 @@
+html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
+dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
+
+html, body{width:100%;}
+ul,ol,li{list-style:none;}
+table{border-spacing:0;border-collapse:collapse;}
+main,header,section,nav,footer,aside,article,figure{display:block;}
+img,fieldset{border:0;}
+a{text-decoration:none;}
+em, address { font-style:normal;}
+.hide,legend,hr,caption span {position:absolute; left:-3000%; font-size: 0;}
+
+
+.clearfix::after { content:""; display:block; clear:both;}
+.clear {clear:both;}
+
+.skip { position: absolute; left: 0; top:-50px; width: 100%; height: 40px; line-height: 40px; text-align: center; background: #000; color: #fff; transition: all 0.5s;}
+.skip:focus { top: 0;}
+
+/* font */
+@font-face{
+    font-family:'CjOnlyOnetitleMedium';
+    font-style:normal;
+    src:url("../font/CJ\ ONLYONE\ NEW\ TITLE\ MEDIUM.TTF")format('truetype');
+}
+@font-face{
+    font-family:'CjOnlyOnetitleBold';
+    font-style:normal;
+    src:url("../font/CJ\ ONLYONE\ NEW\ TITLE\ BOLD.TTF") format('truetype');
+}
+@font-face{
+    font-family:'CjOnlyOneBodyRegular';
+    font-style:normal;
+    src:url("../font/CJ\ ONLYONE\ NEW\ BODY\ REGULAR.TTF") format('truetype');
+}
+@font-face{
+    font-family:'CjOnlyOneBodyLight';
+    font-style:normal;
+    src:url("../font/CJ\ ONLYONE\ NEW\ BODY\ LIGHT.TTF") format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
