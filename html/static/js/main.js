@@ -107,6 +107,7 @@ $(document).ready(function(){
             // stopVideo(currentindex);
         }
      
+
         function tabHandler(index){
             btns.removeClass('active');
             videolist.removeClass('active');
@@ -144,6 +145,7 @@ $(document).ready(function(){
         btns.click(function(e){
             e.preventDefault();
             var index=$(this).index();
+            if($(this).hasClass('active')) return
             tabHandler(index);
         })
 
